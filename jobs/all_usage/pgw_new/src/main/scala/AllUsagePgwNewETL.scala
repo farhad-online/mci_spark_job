@@ -8,7 +8,7 @@ import org.apache.spark.sql.types.StringType
 
 object AllUsagePgwNewETL {
   def main(args: Array[String]): Unit = {
-    ConfigModule.setConfigPath(args(1))
+    ConfigModule.setConfigPath(args(0))
 
     val spark = AllUsagePgwNewConfig.spark.getSparkConfig
       .enableHiveSupport()

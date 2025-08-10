@@ -86,7 +86,7 @@ lazy val ods_pgw_new = (project in file("jobs/ods/pgw_new"))
     commonSettings,
     assemblySettings,
     name := "ods_pgw_new",
-    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.ods.pgw_new.OdsPgwNew"),
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.ods.pgw_new.OdsPgwNewETL"),
     assembly / assemblyJarName := "ods_pgw_new.jar"
   )
 
@@ -96,7 +96,7 @@ lazy val ods_network_switch = (project in file("jobs/ods/network_switch"))
     commonSettings,
     assemblySettings,
     name := "ods_network_switch",
-    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.ods.network_switch.OdsNetworkSwitch"),
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.ods.network_switch.OdsNetworkSwitchETL"),
     assembly / assemblyJarName := "ods_network_switch.jar"
   )
 

@@ -9,6 +9,7 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../../../../jobs/all_usage/cbs">
       <sourceFolder url="file://$MODULE_DIR$/../../../../../../jobs/all_usage/cbs/src/main/scala" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../jobs/all_usage/cbs/src/test/scala" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/../../../../../../jobs/all_usage/cbs/target" />
     </content>
     <orderEntry type="inheritedJdk" />

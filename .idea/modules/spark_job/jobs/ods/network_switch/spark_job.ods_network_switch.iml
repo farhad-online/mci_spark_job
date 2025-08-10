@@ -8,6 +8,7 @@
     <output-test url="file://$MODULE_DIR$/../../../../../../jobs/ods/network_switch/target/scala-2.12/test-classes" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../../../../../jobs/ods/network_switch">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../../../jobs/ods/network_switch/src/main/scala" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/../../../../../../jobs/ods/network_switch/target" />
     </content>
     <orderEntry type="inheritedJdk" />

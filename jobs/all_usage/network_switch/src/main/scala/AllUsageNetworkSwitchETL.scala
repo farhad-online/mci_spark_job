@@ -8,7 +8,7 @@ import org.apache.spark.sql.types.StringType
 
 object AllUsageNetworkSwitchETL {
   def main(args: Array[String]): Unit = {
-    ConfigModule.setConfigPath(args(1))
+    ConfigModule.setConfigPath(args(0))
 
     val spark = AllUsageNetworkSwitchConfig.spark.getSparkConfig
       .enableHiveSupport()
