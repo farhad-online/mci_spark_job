@@ -1,0 +1,3 @@
+[debug] not up to date. inChanged = true, force = false
+[debug] Updating ProjectRef(uri("file:/opt/spark_projects/mci_spark_job/"), "ods_ocs_data")...
+[debug] Done updating ProjectRef(uri("file:/opt/spark_projects/mci_spark_job/"), "ods_ocs_data")
