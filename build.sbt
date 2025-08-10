@@ -30,8 +30,14 @@ val commonDependencies = Seq(
   "org.apache.hadoop" % "hadoop-hdfs" % "3.2.4" % "provided",
 )
 
+val testDependencies = Seq(
+  "org.scalatest" %% "scalatest" % "3.2.16" % Test,
+  "org.apache.spark" %% "spark-core" % sparkVersion % Test,
+  "org.apache.spark" %% "spark-sql" % sparkVersion % Test
+)
+
 lazy val commonSettings = Seq(
-  libraryDependencies ++= commonDependencies,
+  libraryDependencies ++= commonDependencies ++ testDependencies,
   scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked"),
   //  assembly / unmanagedResourceDirectories += baseDirectory.value / "config" // Include config files
 )
@@ -100,9 +106,30 @@ lazy val ods_network_switch = (project in file("jobs/ods/network_switch"))
     assembly / assemblyJarName := "ods_network_switch.jar"
   )
 
+lazy val ods_ocs_data = (project in file("jobs/ods/ocs_data"))
+  .dependsOn(core)
+  .settings(
+    commonSettings,
+    assemblySettings,
+    name := "ods_ocs_data",
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.ods.ocs_data.OdsOcsDataMain"),
+    assembly / assemblyJarName := "ods_ocs_data.jar"
+  )
+
+
+lazy val ods_ocs_sms = (project in file("jobs/ods/ocs_sms"))
+  .dependsOn(core)
+  .settings(
+    commonSettings,
+    assemblySettings,
+    name := "ods_ocs_sms",
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.ods.ocs_sms.OdsOcsSmsMain"),
+    assembly / assemblyJarName := "ods_ocs_sms.jar"
+  )
+
 lazy val root = project
   .in(file("."))
-  .aggregate(core, all_usage_network_switch, all_usage_pgw_new, all_usage_cbs, ods_network_switch, ods_pgw_new)
+  .aggregate(core, all_usage_network_switch, all_usage_pgw_new, all_usage_cbs, ods_network_switch, ods_pgw_new, ods_ocs_data, ods_ocs_sms)
   .settings(
     name := "spark_job",
     publish / skip := true
