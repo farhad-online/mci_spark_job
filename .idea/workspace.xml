@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbc4893b-58a1-4d43-a680-0c741aec59a5" name="Changes" comment="" />
+    <list default="true" id="fbc4893b-58a1-4d43-a680-0c741aec59a5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/scala/connectors/console/ConsoleSink.scala" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/scala/connectors/console/ConsoleSink.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/scala/connectors/hive/HiveSink.scala" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/scala/connectors/hive/HiveSink.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/scala/connectors/kafka/KafkaSource.scala" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/scala/connectors/kafka/KafkaSource.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/scala/utils/SparkFunc.scala" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/scala/utils/SparkFunc.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/scala/utils/SparkUDF.scala" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/scala/utils/SparkUDF.scala" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +46,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -55,6 +65,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -72,7 +83,7 @@
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2652778" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2281901" />
       <window_info id="Commit" order="1" weight="0.25" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -85,7 +96,7 @@
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.16380368" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.15379903" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="bottom" id="Build" order="5" weight="0.3302696" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="6" weight="0.3302696" />
@@ -118,7 +129,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754747657453</updated>
-      <workItem from="1754747658430" duration="4694000" />
+      <workItem from="1754747658430" duration="5599000" />
     </task>
     <servers />
   </component>

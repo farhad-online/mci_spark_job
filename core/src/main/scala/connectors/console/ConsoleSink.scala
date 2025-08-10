@@ -1,4 +1,4 @@
-package connectors.console
+package ir.mci.dwbi.bigdata.spark_job.core.connectors.console
 
 import ir.mci.dwbi.bigdata.spark_job.core.logger.Logger
 import org.apache.spark.sql.DataFrame

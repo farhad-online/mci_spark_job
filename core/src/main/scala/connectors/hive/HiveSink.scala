@@ -1,4 +1,4 @@
-package connectors.hive
+package ir.mci.dwbi.bigdata.spark_job.core.connectors.hive
 
 import ir.mci.dwbi.bigdata.spark_job.core.configs.hive.HiveConfig
 import ir.mci.dwbi.bigdata.spark_job.core.configs.spark.SparkConfig
