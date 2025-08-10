@@ -9,6 +9,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spark_job/core/spark_job.core.iml" filepath="$PROJECT_DIR$/.idea/modules/spark_job/core/spark_job.core.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spark_job/jobs/ods/network_switch/spark_job.ods_network_switch.iml" filepath="$PROJECT_DIR$/.idea/modules/spark_job/jobs/ods/network_switch/spark_job.ods_network_switch.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spark_job.ods_ocs_data.iml" filepath="$PROJECT_DIR$/.idea/modules/spark_job.ods_ocs_data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spark_job.ods_ocs_mgr.iml" filepath="$PROJECT_DIR$/.idea/modules/spark_job.ods_ocs_mgr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spark_job.ods_ocs_mon.iml" filepath="$PROJECT_DIR$/.idea/modules/spark_job.ods_ocs_mon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spark_job.ods_ocs_rec.iml" filepath="$PROJECT_DIR$/.idea/modules/spark_job.ods_ocs_rec.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spark_job.ods_ocs_sms.iml" filepath="$PROJECT_DIR$/.idea/modules/spark_job.ods_ocs_sms.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spark_job/jobs/ods/pgw_new/spark_job.ods_pgw_new.iml" filepath="$PROJECT_DIR$/.idea/modules/spark_job/jobs/ods/pgw_new/spark_job.ods_pgw_new.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/spark_job/spark_job.spark_job-build.iml" filepath="$PROJECT_DIR$/.idea/modules/spark_job/spark_job.spark_job-build.iml" />

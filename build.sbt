@@ -116,6 +116,35 @@ lazy val ods_ocs_data = (project in file("jobs/ods/ocs_data"))
     assembly / assemblyJarName := "ods_ocs_data.jar"
   )
 
+lazy val ods_ocs_mgr = (project in file("jobs/ods/ocs_mgr"))
+  .dependsOn(core)
+  .settings(
+    commonSettings,
+    assemblySettings,
+    name := "ods_ocs_mgr",
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.ods.ocs_mgr.OdsOcsMgrMain"),
+    assembly / assemblyJarName := "ods_ocs_mgr.jar"
+  )
+
+lazy val ods_ocs_mon = (project in file("jobs/ods/ocs_mon"))
+  .dependsOn(core)
+  .settings(
+    commonSettings,
+    assemblySettings,
+    name := "ods_ocs_mon",
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.ods.ocs_mon.OdsOcsMonMain"),
+    assembly / assemblyJarName := "ods_ocs_mon.jar"
+  )
+
+lazy val ods_ocs_rec = (project in file("jobs/ods/ocs_rec"))
+  .dependsOn(core)
+  .settings(
+    commonSettings,
+    assemblySettings,
+    name := "ods_ocs_rec",
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.ods.ocs_rec.OdsOcsRecMain"),
+    assembly / assemblyJarName := "ods_ocs_rec.jar"
+  )
 
 lazy val ods_ocs_sms = (project in file("jobs/ods/ocs_sms"))
   .dependsOn(core)
@@ -129,7 +158,11 @@ lazy val ods_ocs_sms = (project in file("jobs/ods/ocs_sms"))
 
 lazy val root = project
   .in(file("."))
-  .aggregate(core, all_usage_network_switch, all_usage_pgw_new, all_usage_cbs, ods_network_switch, ods_pgw_new, ods_ocs_data, ods_ocs_sms)
+  .aggregate(core,
+    all_usage_network_switch, all_usage_pgw_new, all_usage_cbs,
+    ods_network_switch,
+    ods_pgw_new,
+    ods_ocs_data, ods_ocs_sms, ods_ocs_mgr, ods_ocs_mon)
   .settings(
     name := "spark_job",
     publish / skip := true

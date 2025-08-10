@@ -572,7 +572,5 @@ object OdsOcsSmsSchema {
     StructField("RATING_OFFERING_LIST_C565", StringType, true),
     StructField("C566", StringType, true),
     StructField("TEMP_1", StringType, true),
-    StructField("TEMP_2", StringType, true),
-    StructField("TEMP_3", StringType, true),
     StructField("FILE_NAME", StringType, true)))
 }

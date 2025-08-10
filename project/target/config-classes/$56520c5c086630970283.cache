@@ -1,0 +1,12 @@
+root
+ods_ocs_sms
+ods_ocs_rec
+ods_ocs_mon
+ods_ocs_mgr
+ods_ocs_data
+ods_network_switch
+ods_pgw_new
+all_usage_cbs
+all_usage_pgw_new
+all_usage_network_switch
+core

@@ -29,7 +29,7 @@ package ir.mci.dwbi.bigdata.spark_job.jobs.ods.${main_dir}
 
 import ir.mci.dwbi.bigdata.spark_job.core.utils.BaseMain
 
-object Main {
+object ${class_prefix}Main {
   def main(args: Array[String]): Unit = {
     BaseMain.run(${class_prefix}Processor.process, args)
   }
@@ -62,7 +62,7 @@ object ${class_prefix}Schema {
 EOF
 
 # Processor.scala
-cat > "$test_dir/${class_prefix}Processor.scala" << EOF
+cat > "$test_dir/${class_prefix}ProcessorTest.scala" << EOF
 package ir.mci.dwbi.bigdata.spark_job.jobs.ods.${main_dir}
 
 import org.apache.spark.sql.{DataFrame, SparkSession}
