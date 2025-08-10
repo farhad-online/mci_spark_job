@@ -2,10 +2,10 @@ package ir.mci.dwbi.bigdata.spark_job.core.utils
 
 import org.slf4j.LoggerFactory
 import ir.mci.dwbi.bigdata.spark_job.core.configs.HdfsConfig
+import ir.mci.dwbi.bigdata.spark_job.core.logger.Logger
 import org.apache.spark.sql.DataFrame
 
-object BaseMain {
-  private val logger = LoggerFactory.getLogger(getClass)
+object BaseMain extends Logger{
 
   def run(processor: DataFrame => DataFrame, args: Array[String]): Unit = {
     if (args.length != 1) {

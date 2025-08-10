@@ -9,9 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/core" />
-            <option value="$PROJECT_DIR$/jobs/all_usage/cbs" />
-            <option value="$PROJECT_DIR$/jobs/all_usage/network_switch" />
-            <option value="$PROJECT_DIR$/jobs/all_usage/pgw_new" />
+            <option value="$PROJECT_DIR$/jobs/all_usage" />
             <option value="$PROJECT_DIR$/jobs/ods/network_switch" />
             <option value="$PROJECT_DIR$/jobs/ods/ocs_data" />
             <option value="$PROJECT_DIR$/jobs/ods/ocs_mgr" />
@@ -23,6 +21,7 @@
           </set>
         </option>
         <option name="sbtVersion" value="1.11.1" />
+        <option name="separateProdAndTestSources" value="false" />
       </SbtProjectSettings>
     </option>
   </component>

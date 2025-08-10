@@ -11,3 +11,13 @@ case class HiveConfig(
   override def validate(): Either[List[String], Unit] = Right(())
 }
 
+object HiveConfig {
+  def getEmpty: HiveConfig = {
+    HiveConfig(
+      "",
+      "",
+      Map()
+    )
+  }
+}
+

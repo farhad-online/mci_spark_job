@@ -1,0 +1,11 @@
+.bsp
+.idea
+
+target
+core/target
+project/target
+jobs/all_usage/target
+jobs/ods/network_switch/target
+jobs/ods/pgw_new/target
+jobs/ods/ocs_data/target
+jobs/ods/ocs_sms/target
