@@ -56,7 +56,7 @@ lazy val all_usage_network_switch = (project in file("jobs/all_usage/network_swi
     commonSettings,
     assemblySettings,
     name := "all_usage_network_switch",
-    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.all_usage.network_switch.Main"),
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.all_usage.network_switch.AllUsageNetworkSwitchETL"),
     assembly / assemblyJarName := "all_usage_network_switch.jar"
   )
 
@@ -66,7 +66,7 @@ lazy val all_usage_pgw_new = (project in file("jobs/all_usage/pgw_new"))
     commonSettings,
     assemblySettings,
     name := "all_usage_pgw_new",
-    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.all_usage.pgw_new.Main"),
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.all_usage.pgw_new.AllUsagePgwNewETL"),
     assembly / assemblyJarName := "all_usage_pgw_new.jar"
   )
 
@@ -76,7 +76,7 @@ lazy val all_usage_cbs = (project in file("jobs/all_usage/cbs"))
     commonSettings,
     assemblySettings,
     name := "all_usage_cbs",
-    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.all_usage.cbs.Main"),
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.all_usage.cbs.AllUsageCbsETL"),
     assembly / assemblyJarName := "all_usage_cbs.jar"
   )
 
@@ -86,7 +86,7 @@ lazy val ods_pgw_new = (project in file("jobs/ods/pgw_new"))
     commonSettings,
     assemblySettings,
     name := "ods_pgw_new",
-    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.ods.pgw_new.Main"),
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.ods.pgw_new.OdsPgwNew"),
     assembly / assemblyJarName := "ods_pgw_new.jar"
   )
 
@@ -96,7 +96,7 @@ lazy val ods_network_switch = (project in file("jobs/ods/network_switch"))
     commonSettings,
     assemblySettings,
     name := "ods_network_switch",
-    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.ods.network_switch.Main"),
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.ods.network_switch.OdsNetworkSwitch"),
     assembly / assemblyJarName := "ods_network_switch.jar"
   )
 
