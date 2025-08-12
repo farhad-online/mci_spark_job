@@ -1,4 +1,4 @@
-package pgw_new
+package ir.mci.dwbi.bigdata.spark_job.jobs.all_usage.pgw_new
 
 import ir.mci.dwbi.bigdata.spark_job.core.utils.SparkUDF
 import org.apache.spark.sql.DataFrame

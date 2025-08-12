@@ -1,4 +1,4 @@
-package network_switch
+package ir.mci.dwbi.bigdata.spark_job.jobs.all_usage.network_switch
 
 import ir.mci.dwbi.bigdata.spark_job.core.utils.SparkUDF
 import org.apache.spark.sql.DataFrame

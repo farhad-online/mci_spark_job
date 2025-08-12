@@ -29,3 +29,19 @@ case class SparkConfig(
     builder
   }
 }
+
+object SparkConfig {
+  def getEmpty: SparkConfig = {
+    SparkConfig(
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      0,
+      Map()
+    )
+  }
+}

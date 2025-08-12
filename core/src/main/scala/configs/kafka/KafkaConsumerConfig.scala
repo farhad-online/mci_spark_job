@@ -9,3 +9,12 @@ case class KafkaConsumerConfig(
                         ) extends Logger with CustomOptions[KafkaConsumerConfig] with ConfigValidation {
   override def validate(): Either[List[String], Unit] = Right(())
 }
+
+object KafkaConsumerConfig {
+  def getEmpty: KafkaConsumerConfig = {
+    KafkaConsumerConfig(
+      "",
+      Map()
+    )
+  }
+}
