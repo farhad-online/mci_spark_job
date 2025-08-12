@@ -1,9 +1,6 @@
 #!/bin/bash
 
 generate_from_template() {
-  local ENV="$1"
-  local JOB_PATH="$2"
-  local JOB_NAME="$3"
   local template='
 #!/bin/bash
 
@@ -12,15 +9,14 @@ KEYTAB_PATH="../../../keytabs"
 CONFIG_PATH="../../../config"
 JOB_PATH="."
 JOB_NAME="all_usage_cbs"
-HDFS_BASE_CONFIG_PATH="/user/spark/config"
-HDFS_JOB_CONFIG_PATH="jobs/all_usage/cbs"
-HDFS_CONFIG_PATH="${HDFS_BASE_CONFIG_PATH}/${HDFS_JOB_CONFIG_PATH}/${JOB_NAME}.conf"
+HDFS_JOB_CONFIG_PATH="/user/spark/jobs/all_usage/cbs"
+HDFS_CONFIG_PATH="${HDFS_JOB_CONFIG_PATH}/${JOB_NAME}.conf"
 
-ln -sf
+ln -sf ${KEYTAB_PATH}/*
+ln -sf ${CONFIG_PATH{/*
 
-sudo -u hdfs hdfs dfs -mkdir -p ${HDFS_BASE_CONFIG_PATH}/${HDFS_JOB_CONFIG_PATH}
+sudo -u hdfs hdfs dfs -mkdir -p ${HDFS_JOB_CONFIG_PATH}
 sudo -u hdfs hdfs dfs -rm ${HDFS_CONFIG_PATH}
-sudo -u hdfs hdfs dfs -rm ${HDFS_BASE_CONFIG_PATH}/spark_jaas.conf
 sudo -u hdfs hdfs dfs -put ${JOB_PATH}/${JOB_NAME}.conf ${HDFS_CONFIG_PATH}
 sudo -u hdfs hdfs dfs -put ${CONFIG_PATH}/spark_jaas.conf ${HDFS_BASE_CONFIG_PATH}/spark_jaas.conf
 
@@ -44,5 +40,3 @@ sudo -u spark spark-submit \
 
     chmod +x "$output_path"
 }
-
-generate_from_template "$1" "$2" "$3"

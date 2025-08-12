@@ -1,6 +1,8 @@
 #!/bin/bash
 
-source ./utils/sh/env_variable.sh
+source utils/sh/env_variable.sh
+source utils/sh/job_config_generator.sh
+source utils/sh/job_runner_generator.sh
 
 ENV=${1:-development}
 SH_FILES_PATH="utils/sh"
@@ -10,7 +12,16 @@ JOB_LEN=${#JOB_NAME[@]}
 
 echo "#############################################"
 echo "########--- Runnig on ${ENV} mode"
+if [ ${ENV} = "production" ]; then
+  setup_production_variable
+elif [ ${ENV} = "test" ]; then
+  setup_test_variable
+else
+  setup_development_variable
+fi
 echo "#############################################"
+
+echo ${APP_ENV}
 
 echo "#############################################"
 echo "########--- Building modules"
