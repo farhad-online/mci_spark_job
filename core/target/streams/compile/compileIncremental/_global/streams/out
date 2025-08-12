@@ -1,6 +1,0 @@
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
-[0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
-[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 34 products, 14 sources, 7 libraries[0m
-[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/core/src/main/scala/configs/ConfigModule.scala, ${BASE}/core/src/main/scala/connectors/kafka/KafkaSource.scala, ${BASE}/core/src/main/scala/configs/SparkJobConfig.scala, ${BASE}/core/src/main/scala/configs/hive/HiveConfig.scala, ${BASE}/core/src/main/scala/connectors/console/ConsoleSink.scala, ${BASE}/core/src/main/scala/configs/ConfigValidation.scala, ${BASE}/core/src/main/scala/configs/spark/SparkConfig.scala, ${BASE}/core/src/main/scala/utils/SparkUDF.scala, ${BASE}/core/src/main/java/utils/DateConverter.java, ${BASE}/core/src/main/scala/configs/CustomOptions.scala, ${BASE}/core/src/main/scala/connectors/hive/HiveSink.scala, ${BASE}/core/src/main/scala/logger/Logger.scala, ${BASE}/core/src/main/scala/configs/kafka/KafkaConsumerConfig.scala, ${BASE}/core/src/main/scala/utils/SparkFunc.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
-[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m

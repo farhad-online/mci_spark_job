@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id="ods_ocs_data [file:/opt/spark-job/spark_job/]" external.linked.project.path="$MODULE_DIR$/../../../../../../jobs/ods/ocs_data" external.root.project.path="$MODULE_DIR$/../../../../../.." external.system.id="SBT" external.system.module.type="nestedProject" type="JAVA_MODULE" version="4">
+<module external.linked.project.id="ods_ocs_sms [file:/opt/spark_projects/mci_spark_job/]" external.linked.project.path="$MODULE_DIR$/../../jobs/ods/ocs_sms" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" external.system.module.type="nestedProject" type="JAVA_MODULE" version="4">
   <component name="DisplayModuleName">
-    <option name="name" value="ods_ocs_data" />
+    <option name="name" value="ods_ocs_sms" />
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
-    <output url="file://$MODULE_DIR$/../../../../../../jobs/ods/ocs_data/target/scala-2.12/classes" />
-    <output-test url="file://$MODULE_DIR$/../../../../../../jobs/ods/ocs_data/target/scala-2.12/test-classes" />
+    <output url="file://$MODULE_DIR$/../../jobs/ods/ocs_sms/target/scala-2.12/classes" />
+    <output-test url="file://$MODULE_DIR$/../../jobs/ods/ocs_sms/target/scala-2.12/test-classes" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$/../../../../../../jobs/ods/ocs_data">
-      <sourceFolder url="file://$MODULE_DIR$/../../../../../../jobs/ods/ocs_data/src/main/scala" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../../../../../jobs/ods/ocs_data/src/test/scala" isTestSource="true" />
-      <excludeFolder url="file://$MODULE_DIR$/../../../../../../jobs/ods/ocs_data/target" />
+    <content url="file://$MODULE_DIR$/../../jobs/ods/ocs_sms">
+      <sourceFolder url="file://$MODULE_DIR$/../../jobs/ods/ocs_sms/src/main/scala" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../jobs/ods/ocs_sms/src/test/scala" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../../jobs/ods/ocs_sms/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

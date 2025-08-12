@@ -1,5 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m/opt/spark-job/spark_job/jobs/all_usage/src/main/scala/pgw_new/AllUsagePgwNewConfig.scala:11:53: not enough arguments for method apply: (appName: String, master: String, checkpointLocation: String, outputMode: String, batchMode: String, batchFormat: String, format: String, triggerInterval: Int, options: Map[String,String])ir.mci.dwbi.bigdata.spark_job.core.configs.spark.SparkConfig in object SparkConfig.[0m
-[0m[[0m[31merror[0m] [0m[0mUnspecified value parameters appName, master, checkpointLocation...[0m
-[0m[[0m[31merror[0m] [0m[0m  override lazy val spark: SparkConfig = SparkConfig()[0m
-[0m[[0m[31merror[0m] [0m[0m                                                    ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
