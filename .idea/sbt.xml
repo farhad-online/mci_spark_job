@@ -13,12 +13,13 @@
             <option value="$PROJECT_DIR$/jobs/all_usage/network_switch" />
             <option value="$PROJECT_DIR$/jobs/all_usage/pgw_new" />
             <option value="$PROJECT_DIR$/jobs/ods/network_switch" />
+            <option value="$PROJECT_DIR$/jobs/ods/ocs_data" />
+            <option value="$PROJECT_DIR$/jobs/ods/ocs_sms" />
             <option value="$PROJECT_DIR$/jobs/ods/pgw_new" />
             <option value="$PROJECT_DIR$/project" />
           </set>
         </option>
         <option name="sbtVersion" value="1.11.1" />
-        <option name="separateProdAndTestSources" value="false" />
       </SbtProjectSettings>
     </option>
   </component>

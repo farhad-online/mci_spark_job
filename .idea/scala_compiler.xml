@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
+    <option name="separateProdTestSources" value="true" />
     <profile name="sbt 1" modules="spark_job,spark_job_9302" />
-    <profile name="sbt 2" modules="spark_job.all_usage_cbs,spark_job.all_usage_network_switch,spark_job.all_usage_pgw_new,spark_job.common,spark_job.core,spark_job.ods_network_switch,spark_job.ods_pgw_new">
+    <profile name="sbt 2" modules="spark_job.all_usage_cbs,spark_job.all_usage_network_switch,spark_job.all_usage_pgw_new,spark_job.common,spark_job.core,spark_job.ods_network_switch,spark_job.ods_ocs_data,spark_job.ods_ocs_sms,spark_job.ods_pgw_new">
       <option name="deprecationWarnings" value="true" />
       <option name="uncheckedWarnings" value="true" />
       <option name="featureWarnings" value="true" />

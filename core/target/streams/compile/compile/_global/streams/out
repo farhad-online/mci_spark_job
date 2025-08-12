@@ -1,4 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m/opt/spark-job/spark_job/core/src/main/scala/utils/SparkFunc.scala:3:17: traits or objects may not have parameters[0m
-[0m[[0m[31merror[0m] [0m[0mobject SparkFunc()[0m
-[0m[[0m[31merror[0m] [0m[0m                ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
