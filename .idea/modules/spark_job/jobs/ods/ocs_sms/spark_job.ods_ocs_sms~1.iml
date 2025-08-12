@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="ods_ocs_sms [file:/opt/spark-job/spark_job/]" external.linked.project.path="$MODULE_DIR$/../../../../../../jobs/ods/ocs_sms" external.root.project.path="$MODULE_DIR$/../../../../../.." external.system.id="SBT" external.system.module.type="nestedProject" type="JAVA_MODULE" version="4">
+  <component name="DisplayModuleName">
+    <option name="name" value="ods_ocs_sms" />
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../../../jobs/ods/ocs_sms">
+      <excludeFolder url="file://$MODULE_DIR$/../../../../../../jobs/ods/ocs_sms/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="spark_job.ods_ocs_sms~1.main" />
+    <orderEntry type="module" module-name="spark_job.ods_ocs_sms~1.test" production-on-test="" />
+  </component>
+</module>

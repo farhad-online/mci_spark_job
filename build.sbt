@@ -39,7 +39,6 @@ val testDependencies = Seq(
 lazy val commonSettings = Seq(
   libraryDependencies ++= commonDependencies ++ testDependencies,
   scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked"),
-  //  assembly / unmanagedResourceDirectories += baseDirectory.value / "config" // Include config files
 )
 
 lazy val assemblySettings = Seq(
@@ -56,34 +55,14 @@ lazy val core = (project in file("core"))
     name := "core"
   )
 
-lazy val all_usage_network_switch = (project in file("jobs/all_usage/network_switch"))
+lazy val all_usage = (project in file("jobs/all_usage"))
   .dependsOn(core)
   .settings(
     commonSettings,
     assemblySettings,
-    name := "all_usage_network_switch",
-    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.all_usage.network_switch.AllUsageNetworkSwitchETL"),
-    assembly / assemblyJarName := "all_usage_network_switch.jar"
-  )
-
-lazy val all_usage_pgw_new = (project in file("jobs/all_usage/pgw_new"))
-  .dependsOn(core)
-  .settings(
-    commonSettings,
-    assemblySettings,
-    name := "all_usage_pgw_new",
-    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.all_usage.pgw_new.AllUsagePgwNewETL"),
-    assembly / assemblyJarName := "all_usage_pgw_new.jar"
-  )
-
-lazy val all_usage_cbs = (project in file("jobs/all_usage/cbs"))
-  .dependsOn(core)
-  .settings(
-    commonSettings,
-    assemblySettings,
-    name := "all_usage_cbs",
-    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.all_usage.cbs.AllUsageCbsETL"),
-    assembly / assemblyJarName := "all_usage_cbs.jar"
+    name := "all_usage",
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.jobs.all_usage.AllUsageETL"),
+    assembly / assemblyJarName := "all_usage.jar"
   )
 
 lazy val ods_pgw_new = (project in file("jobs/ods/pgw_new"))
@@ -129,7 +108,7 @@ lazy val ods_ocs_sms = (project in file("jobs/ods/ocs_sms"))
 
 lazy val root = project
   .in(file("."))
-  .aggregate(core, all_usage_network_switch, all_usage_pgw_new, all_usage_cbs, ods_network_switch, ods_pgw_new, ods_ocs_data, ods_ocs_sms)
+  .aggregate(core, all_usage, ods_network_switch, ods_pgw_new, ods_ocs_data, ods_ocs_sms)
   .settings(
     name := "spark_job",
     publish / skip := true

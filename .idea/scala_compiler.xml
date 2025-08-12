@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ScalaCompilerConfiguration">
     <option name="separateProdTestSources" value="true" />
-    <profile name="sbt 1" modules="spark_job,spark_job_9302" />
-    <profile name="sbt 2" modules="spark_job.all_usage_cbs,spark_job.all_usage_network_switch,spark_job.all_usage_pgw_new,spark_job.common,spark_job.core,spark_job.ods_network_switch,spark_job.ods_ocs_data,spark_job.ods_ocs_sms,spark_job.ods_pgw_new">
+    <profile name="sbt 1" modules="all_usage,all_usage.main,all_usage.test,spark_job,spark_job.all_usage,spark_job.all_usage_cbs,spark_job.all_usage_network_switch,spark_job.all_usage_pgw_new,spark_job.core,spark_job.main,spark_job.ods_network_switch,spark_job.ods_ocs_data~1,spark_job.ods_ocs_sms~1,spark_job.ods_pgw_new,spark_job.test,spark_job_9302" />
+    <profile name="sbt 2" modules="spark_job.all_usage.main,spark_job.all_usage.test,spark_job.all_usage_cbs.main,spark_job.all_usage_cbs.test,spark_job.all_usage_network_switch.main,spark_job.all_usage_network_switch.test,spark_job.all_usage_pgw_new.main,spark_job.all_usage_pgw_new.test,spark_job.common,spark_job.core.main,spark_job.core.test,spark_job.ods_network_switch.main,spark_job.ods_network_switch.test,spark_job.ods_ocs_data,spark_job.ods_ocs_data~1.main,spark_job.ods_ocs_data~1.test,spark_job.ods_ocs_sms,spark_job.ods_ocs_sms~1.main,spark_job.ods_ocs_sms~1.test,spark_job.ods_pgw_new.main,spark_job.ods_pgw_new.test">
       <option name="deprecationWarnings" value="true" />
       <option name="uncheckedWarnings" value="true" />
       <option name="featureWarnings" value="true" />
