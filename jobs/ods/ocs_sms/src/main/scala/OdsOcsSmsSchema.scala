@@ -5,7 +5,7 @@ import org.apache.spark.sql.types._
 object OdsOcsSmsSchema {
 
   val schema = StructType(Seq(
-    StructField("DR_ID_C1", StringType, true),
+    StructField("CDR_ID_C1", StringType, true),
     StructField("CDR_SUB_ID_C2", StringType, true),
     StructField("CDR_TYPE_C3", StringType, true),
     StructField("SPLIT_CDR_REASON_C4", StringType, true),

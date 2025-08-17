@@ -102,7 +102,7 @@ lazy val ods_network_switch = (project in file("jobs/ods/network_switch"))
     commonSettings,
     assemblySettings,
     name := "ods_network_switch",
-    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.ods.network_switch.OdsNetworkSwitchETL"),
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.jobs.ods.network_switch.OdsNetworkSwitchETL"),
     assembly / assemblyJarName := "ods_network_switch.jar"
   )
 
@@ -112,7 +112,7 @@ lazy val ods_ocs_data = (project in file("jobs/ods/ocs_data"))
     commonSettings,
     assemblySettings,
     name := "ods_ocs_data",
-    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.ods.ocs_data.OdsOcsDataMain"),
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.jobs.ods.ocs_data.OdsOcsDataMain"),
     assembly / assemblyJarName := "ods_ocs_data.jar"
   )
 
@@ -122,7 +122,7 @@ lazy val ods_ocs_mgr = (project in file("jobs/ods/ocs_mgr"))
     commonSettings,
     assemblySettings,
     name := "ods_ocs_mgr",
-    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.ods.ocs_mgr.OdsOcsMgrMain"),
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.jobs.ods.ocs_mgr.OdsOcsMgrMain"),
     assembly / assemblyJarName := "ods_ocs_mgr.jar"
   )
 
@@ -132,7 +132,7 @@ lazy val ods_ocs_mon = (project in file("jobs/ods/ocs_mon"))
     commonSettings,
     assemblySettings,
     name := "ods_ocs_mon",
-    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.ods.ocs_mon.OdsOcsMonMain"),
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.jobs.ods.ocs_mon.OdsOcsMonMain"),
     assembly / assemblyJarName := "ods_ocs_mon.jar"
   )
 
@@ -142,7 +142,7 @@ lazy val ods_ocs_rec = (project in file("jobs/ods/ocs_rec"))
     commonSettings,
     assemblySettings,
     name := "ods_ocs_rec",
-    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.ods.ocs_rec.OdsOcsRecMain"),
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.jobs.ods.ocs_rec.OdsOcsRecMain"),
     assembly / assemblyJarName := "ods_ocs_rec.jar"
   )
 
@@ -152,9 +152,61 @@ lazy val ods_ocs_sms = (project in file("jobs/ods/ocs_sms"))
     commonSettings,
     assemblySettings,
     name := "ods_ocs_sms",
-    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.ods.ocs_sms.OdsOcsSmsMain"),
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.jobs.ods.ocs_sms.OdsOcsSmsMain"),
     assembly / assemblyJarName := "ods_ocs_sms.jar"
   )
+
+lazy val ods_postpaid_data = (project in file("jobs/ods/postpaid_data"))
+  .dependsOn(core)
+  .settings(
+    commonSettings,
+    assemblySettings,
+    name := "ods_postpaid_data",
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.jobs.ods.postpaid_data.OdsPostpaidDataMain"),
+    assembly / assemblyJarName := "ods_postpaid_data.jar"
+  )
+
+lazy val ods_postpaid_mgr = (project in file("jobs/ods/postpaid_mgr"))
+  .dependsOn(core)
+  .settings(
+    commonSettings,
+    assemblySettings,
+    name := "ods_postpaid_mgr",
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.jobs.ods.postpaid_mgr.OdsPostpaidMgrMain"),
+    assembly / assemblyJarName := "ods_postpaid_mgr.jar"
+  )
+
+lazy val ods_postpaid_mon = (project in file("jobs/ods/postpaid_mon"))
+  .dependsOn(core)
+  .settings(
+    commonSettings,
+    assemblySettings,
+    name := "ods_postpaid_mon",
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.jobs.ods.postpaid_mon.OdsPostpaidMonMain"),
+    assembly / assemblyJarName := "ods_postpaid_mon.jar"
+  )
+
+lazy val ods_postpaid_rec = (project in file("jobs/ods/postpaid_rec"))
+  .dependsOn(core)
+  .settings(
+    commonSettings,
+    assemblySettings,
+    name := "ods_postpaid_rec",
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.jobs.ods.postpaid_rec.OdsPostpaidRecMain"),
+    assembly / assemblyJarName := "ods_postpaid_rec.jar"
+  )
+
+lazy val ods_postpaid_sms = (project in file("jobs/ods/postpaid_sms"))
+  .dependsOn(core)
+  .settings(
+    commonSettings,
+    assemblySettings,
+    name := "ods_postpaid_sms",
+    assembly / mainClass := Some("ir.mci.dwbi.bigdata.spark_job.jobs.ods.postpaid_sms.OdsPostpaidSmsMain"),
+    assembly / assemblyJarName := "ods_postpaid_sms.jar"
+  )
+
+
 
 lazy val root = project
   .in(file("."))
@@ -162,7 +214,8 @@ lazy val root = project
     all_usage_network_switch, all_usage_pgw_new, all_usage_cbs,
     ods_network_switch,
     ods_pgw_new,
-    ods_ocs_data, ods_ocs_sms, ods_ocs_mgr, ods_ocs_mon)
+    ods_ocs_data, ods_ocs_sms, ods_ocs_mgr, ods_ocs_mon,
+    ods_postpaid_data, ods_postpaid_mgr, ods_postpaid_mon, ods_postpaid_rec, ods_postpaid_sms)
   .settings(
     name := "spark_job",
     publish / skip := true

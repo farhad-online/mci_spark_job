@@ -9,7 +9,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/core" />
-            <option value="$PROJECT_DIR$/jobs/all_usage" />
+            <option value="$PROJECT_DIR$/jobs/all_usage/cbs" />
+            <option value="$PROJECT_DIR$/jobs/all_usage/network_switch" />
+            <option value="$PROJECT_DIR$/jobs/all_usage/pgw_new" />
             <option value="$PROJECT_DIR$/jobs/ods/network_switch" />
             <option value="$PROJECT_DIR$/jobs/ods/ocs_data" />
             <option value="$PROJECT_DIR$/jobs/ods/ocs_mgr" />
@@ -17,11 +19,15 @@
             <option value="$PROJECT_DIR$/jobs/ods/ocs_rec" />
             <option value="$PROJECT_DIR$/jobs/ods/ocs_sms" />
             <option value="$PROJECT_DIR$/jobs/ods/pgw_new" />
+            <option value="$PROJECT_DIR$/jobs/ods/postpaid_data" />
+            <option value="$PROJECT_DIR$/jobs/ods/postpaid_mgr" />
+            <option value="$PROJECT_DIR$/jobs/ods/postpaid_mon" />
+            <option value="$PROJECT_DIR$/jobs/ods/postpaid_rec" />
+            <option value="$PROJECT_DIR$/jobs/ods/postpaid_sms" />
             <option value="$PROJECT_DIR$/project" />
           </set>
         </option>
         <option name="sbtVersion" value="1.11.1" />
-        <option name="separateProdAndTestSources" value="false" />
       </SbtProjectSettings>
     </option>
   </component>

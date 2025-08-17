@@ -1,6 +1,7 @@
 .bsp
 .idea
 
+runner/
 target
 core/target
 project/target
@@ -8,4 +9,12 @@ jobs/all_usage/target
 jobs/ods/network_switch/target
 jobs/ods/pgw_new/target
 jobs/ods/ocs_data/target
+jobs/ods/ocs_mon/target
+jobs/ods/ocs_mgr/target
+jobs/ods/ocs_rec/target
 jobs/ods/ocs_sms/target
+jobs/ods/postpaid_data/target
+jobs/ods/postpaid_mon/target
+jobs/ods/postpaid_mgr/target
+jobs/ods/postpaid_rec/target
+jobs/ods/postpaid_sms/target
